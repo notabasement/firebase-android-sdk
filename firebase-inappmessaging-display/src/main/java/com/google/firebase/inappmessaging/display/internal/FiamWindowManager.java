@@ -49,6 +49,9 @@ public class FiamWindowManager {
 
   /** Inflate the container into a new popup window */
   public void show(@NonNull final BindingWrapper bindingWrapper, @NonNull Activity activity) {
+    if (activity.isFinishing() || activity.isDestroyed()) {
+      return;
+    }
     if (isFiamDisplayed()) {
       Logging.loge("Fiam already active. Cannot show new Fiam.");
       return;

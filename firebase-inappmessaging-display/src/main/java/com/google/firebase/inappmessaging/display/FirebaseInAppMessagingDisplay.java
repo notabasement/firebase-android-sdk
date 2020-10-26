@@ -436,6 +436,11 @@ public class FirebaseInAppMessagingDisplay extends FirebaseInAppMessagingDisplay
 
   private List<Action> extractActions(InAppMessage message) {
     List<Action> actions = new ArrayList<>();
+    if (message == null) {
+      // An empty action is treated like a dismiss
+      actions.add(Action.builder().build());
+      return actions;
+    }
     switch (message.getMessageType()) {
       case BANNER:
         actions.add(((BannerMessage) message).getAction());
