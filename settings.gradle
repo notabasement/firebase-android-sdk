@@ -22,6 +22,17 @@ discoverSubprojects(file('subprojects.cfg')).each {
   include ":$it"
 }
 include ':firebase-common:firebase-common-ktx'
+include ':firebase-config:firebase-config-ktx'
+include ':firebase-crashlytics:firebase-crashlytics-ktx'
+include ':firebase-database:firebase-database-ktx'
+include ':firebase-dynamic-links:firebase-dynamic-links-ktx'
+include ':firebase-firestore:firebase-firestore-ktx'
+include ':firebase-functions:firebase-functions-ktx'
+include ':firebase-inappmessaging:firebase-inappmessaging-ktx'
+include ':firebase-inappmessaging-display:firebase-inappmessaging-display-ktx'
+include ':firebase-installations:firebase-installations-ktx'
+include ':firebase-storage:ktx'
+include ':firebase-messaging:firebase-messaging-ktx'
 
 renameBuildScripts(rootProject)
 
