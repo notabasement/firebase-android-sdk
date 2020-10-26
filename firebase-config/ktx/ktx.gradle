@@ -17,6 +17,10 @@ plugins {
     id 'kotlin-android'
 }
 
+configure(subprojects) {
+    group = 'com.google.firebase.config'
+}
+
 firebaseLibrary {
     releaseWith project(':firebase-config')
     publishJavadoc = true
