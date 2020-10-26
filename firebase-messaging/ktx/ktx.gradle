@@ -44,7 +44,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
     implementation project(':firebase-common')
-    implementation project(':firebase-common:ktx')
+    implementation project(':firebase-common:firebase-common-ktx')
     implementation project(':firebase-components')
     implementation project(':firebase-messaging')
     implementation "com.google.android.gms:play-services-basement:17.2.1"

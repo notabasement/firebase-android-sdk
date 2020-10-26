@@ -21,6 +21,7 @@ apply from: 'gradle/projectSettings.gradle'
 discoverSubprojects(file('subprojects.cfg')).each {
   include ":$it"
 }
+include ':firebase-common:firebase-common-ktx'
 
 renameBuildScripts(rootProject)
 

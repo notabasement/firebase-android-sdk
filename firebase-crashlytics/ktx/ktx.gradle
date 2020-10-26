@@ -48,7 +48,7 @@ dependencies {
 
     implementation project(':firebase-common')
     implementation project(':firebase-components')
-    implementation project(':firebase-common:ktx')
+    implementation project(':firebase-common:firebase-common-ktx')
     implementation project(':firebase-crashlytics')
     implementation 'androidx.annotation:annotation:1.1.0'
 
